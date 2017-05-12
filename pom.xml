@@ -7,12 +7,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>first-demo Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
 		<springframework.version>4.3.0.RELEASE</springframework.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -39,6 +39,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 	</dependencies>
 	<build>

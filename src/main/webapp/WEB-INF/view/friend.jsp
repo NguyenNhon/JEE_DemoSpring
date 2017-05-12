@@ -1,6 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,11 +49,6 @@
 					<li>I'm living in California.</li>
 					<li>....</li>
 				</ul>
-				<h3>My friends: </h3>
-				<c:forEach items="${user.friends}" var="item">
-					<li><a href='friend?username=${item}'>${item}</a></li>
-				</c:forEach>
-				<a href="#"><input type="button" value="Upload new profile picture"/></a>
 			</div>
 		</div>
 		<hr>
