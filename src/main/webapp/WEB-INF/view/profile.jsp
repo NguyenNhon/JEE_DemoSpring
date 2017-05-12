@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 
 <!DOCTYPE html>
@@ -51,11 +52,18 @@
 					<li>I'm living in California.</li>
 					<li>....</li>
 				</ul>
-				<h3>My friends: </h3>
-				<c:forEach items="${user.friends}" var="item">
-					<li><a href='friend?username=${item}'>${item}</a></li>
-				</c:forEach>
-				<a href="#"><input type="button" value="Upload new profile picture"/></a>
+				<h3>My friends:</h3>
+				<ul>
+					<c:forEach items="${user.friends}" var="item">
+						<li><a href='friend?username=${item}'>${item}</a></li>
+					</c:forEach>
+				</ul>
+				<hr>
+				<form:form action="${user.username}" method="post" enctype="multipart/form-data" modelAttribute="user">
+					<input name="image" type="file" value="Upload new profile picture" />
+					<input type="submit" value="Submit" />
+				</form:form>
+				<hr>
 			</div>
 		</div>
 		<hr>
