@@ -49,7 +49,12 @@
 					<li>I'm living in California.</li>
 					<li>....</li>
 				</ul>
-				<a href="#">-> Upload new profile picture</a>
+				<h3>My friends: </h3>
+				<ul>
+					<li><a href="#">Mimi</a></li>
+					<li><a href="#">Lyly</a></li>
+				</ul>
+				<a href="#"><input type="button" value="Upload new profile picture"/></a>
 			</div>
 		</div>
 		<hr>

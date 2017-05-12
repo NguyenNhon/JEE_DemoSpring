@@ -37,7 +37,6 @@
               <div>
                 <input type="password" name="password" class="form-control" placeholder="Password" required/>
               </div>
-              <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
               <div>
                 <input class="btn btn-default" type="submit" value="Log in">
               </div>
